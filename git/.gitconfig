@@ -1,0 +1,45 @@
+[core]
+	excludesfile = /Users/*******/.gitignore
+	editor = vim
+[user]
+	name = Yanyang Wang
+	email = *********
+[color]
+	diff = auto 
+	status = auto
+	branch = auto
+	interactive = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow 
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	glog = log --graph --decorate --all --pretty=oneline --abbrev-commit
+	blog = log --graph --decorate --all --pretty=oneline --abbrev-commit --source
+    alog = log --graph --decorate --all --pretty='format:%h %Cred %ad %Cgreen %cn %d %Creset %s' --color --date=short 
+
+	show-files = show --name-only
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	om = merge origin/master
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[diff] 
+	tool = diffmerge
+[merge] 
+	tool = opendiff
+[mergetool]
+	keepBackup = false
+[apply]
+	whitespace = nowarn

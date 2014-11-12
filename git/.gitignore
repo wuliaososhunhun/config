@@ -1,0 +1,30 @@
+# Ignore the target and log directories (including all contents and in all sub-dirs)
+target/
+logs/
+cobertura.ser
+.clover
+# I Don't know what creates .DS_Store (from Omar)
+.DS_Store
+# Ignore log files (usfull if you tee build output to log files i.e. 'mvn clean package 2>&1| tee log.txt')
+*log.txt
+# Ignore intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# eclipse files
+.classpath
+.project
+.settings/
+.springBeans
+.cproject
+.pydevproject
+
+# c, c++, make and cmake 
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+*.o
+*.dylib
