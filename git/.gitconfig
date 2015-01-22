@@ -25,7 +25,7 @@
 [alias]
 	glog = log --graph --decorate --all --pretty=oneline --abbrev-commit
 	blog = log --graph --decorate --all --pretty=oneline --abbrev-commit --source
-    alog = log --graph --decorate --all --pretty='format:%h %Cred %ad %Cgreen %cn %d %Creset %s' --color --date=short 
+    alog = log --graph --decorate --pretty='format:%h %Cred %ad %Cgreen %cn %d %Creset %s' --color --date=short 
 
 	show-files = show --name-only
 	co = checkout
