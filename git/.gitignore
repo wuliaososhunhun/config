@@ -28,3 +28,8 @@ Makefile
 *.cmake
 *.o
 *.dylib
+
+# Ignore the Sensitive folder files
+sensitive/
+Sensitive.*
+
