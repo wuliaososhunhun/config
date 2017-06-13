@@ -5,3 +5,5 @@
 
 2. type => killall Dock 
 
++ Fix mic does not work
+sudo pkill coreaudiod
