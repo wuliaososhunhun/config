@@ -3,10 +3,10 @@
 
 for i in `seq 1 200`; do
     echo run $i;
-    sbt dzm "test-only com.ocado.cfc.decant.zone.actor.station.components.StationActorOnScratchCustomerToteCompleteEvent";
+    sbt dzm "test-only XXX";
     rc=$?;
     if [[ $rc != 0 ]];
     then
-        break;  # Try   break 2   to see what happens.
+        break;
     fi
 done   
