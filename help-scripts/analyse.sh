@@ -41,7 +41,8 @@ do
     echo "Hit: $ZM_STATION_URL"
     curl -s $ZM_STATION_URL > /tmp/temp-containers.json
     COUNT=`jq '. | length' /tmp/temp-containers.json`
-    echo "Bins In Station: $COUNT"
+    WITH_INV_COUNT=`jq '.[] | .content[] | .inventory | length | select(. > 0)' /tmp/temp-containers.json | wc -l`
+    echo "Bins In Station: $WITH_INV_COUNT/$COUNT"
     SURROGATE=0
     NOZONE=""
     IMZONE=""
