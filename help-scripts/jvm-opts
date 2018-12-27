@@ -1,0 +1,7 @@
+Example to control memory:
+
+-XX:InitialCodeCacheSize=64M -XX:CodeCacheExpansionSize=1M -XX:CodeCacheMinimumFreeSpace=1M -XX:ReservedCodeCacheSize=200M
+-XX:MinMetaspaceExpansion=1M -XX:MaxMetaspaceExpansion=8M -XX:MaxMetaspaceSize=200M
+-XX:MaxDirectMemorySize=96M
+-XX:CompressedClassSpaceSize=256M
+-Xss1024K
