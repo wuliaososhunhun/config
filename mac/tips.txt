@@ -1,9 +1,9 @@
 + Add Spacers To The Dock
 
 1. type following in command line(once for on space)
-=> defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+=> defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 
-2. type => killall Dock 
+2. type => killall Dock
 
 + Fix mic does not work
 sudo pkill coreaudiod
